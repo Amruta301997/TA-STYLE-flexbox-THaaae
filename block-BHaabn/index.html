@@ -1,8 +1,138 @@
-<!-- 
-- Create a gallery using flexbox according to the layout shown below.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
 
-![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-1.png)
 
-- Using CSS resets is necessary.
-- Use semantic tags and keep the nesting and indentation proper.
--->
+  <body>
+
+<!--<div id="container">-->
+   <header class="header">
+     <div class="container flex">
+       <a class="brand" href="#">
+       <img src="logo.png" class="logo">
+       </a>
+
+       <nav class="navbar" >
+           
+           <a href="#">child photo</a>&nbsp;
+           <a href="#">family photo</a>&nbsp;
+           <a href="#">all photo</a>&nbsp;
+           <a href="#">CONTACT</a>&nbsp;
+       </nav>
+     </div>
+    </header>
+
+    <section class="gallery">
+          <div class="container">
+            <h2 class="heading">Gallery</h2>
+            <div class="flex">
+                <div class="col1">
+                    <img src="01.png" alt="" />
+                </div>   
+                <div class="col1">
+                    <img src="02.png" alt="" />
+                </div>   
+                <div class="col1">
+                    <img src="03.png" alt="" />
+                </div>   
+                <div class="col1">
+                    <img src="04.png" alt="" />
+                </div>   
+                <div class="col1">
+                    <img src="05.png" alt="" />
+                </div>   
+                <div class="col1">
+                    <img src="06.png" alt="" />
+                </div>
+            </div>
+          </div>
+          <footer>
+            <a href="Twitter">Twitter</a>
+            <a href="Twitter">Facebook</a>
+            <a href="Twitter">instagram</a>
+            
+           </footer>
+
+    </section>
+  </body>
+</html>
+
+
+
+
+
+
+ <!--
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 1400px;
+    margin 0 auto;
+    padding: 0 32px;
+}
+
+
+.header{
+    background-color: blue;
+    padding: 32px;
+}
+
+.flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand img{
+    width:120px;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    margin-left: 32px;
+    font-size: 20px;
+}
+
+
+/*gallery*/
+
+.gallery  .flex{
+    flex-wrap: wrap;
+}
+.gallery{
+    padding: 80px;
+}
+.heading{
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.col1{
+    width: 30%;
+    margin: 15px;
+
+}
+.gallery img{
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+ -->
