@@ -1,8 +1,157 @@
-<!-- 
-- Create a page using flexbox according to the layout shown below.
 
-![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-2.png)
 
-- Using CSS resets is necessary.
-- Use semantic tags and keep the nesting and indentation proper. 
--->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+
+<!--<div id="container">-->
+   <header class="header">
+     <div class="container flex">
+       <a class="brand" href="#">
+       <img src="logo1.png" class="logo">
+       </a>
+
+       <nav class="navbar" >
+           
+           <a href="#"><img src="bell1.png"/></a>&nbsp;
+
+           <a href="#">
+              <span>Sarah Jone</span>  &nbsp;
+              <img src="user.png"/>
+           </a>&nbsp;
+           
+       </nav>
+     </div>
+    </header>
+
+    <main>
+    <aside class="aside">
+        <nav>
+            <div class="box1">
+            <a href="#">
+                <img src="dashboard.png" alt="dashboard"/>
+                <span>Dashboard </span>
+            </a>
+        </div><br>
+            
+        <div class="box1"></div>
+            <a href="#">
+                <img src="article.png" alt=""/>
+                <span>Article</span>
+            </a>
+        </div><br>
+
+            <div class="box1"></div>
+            <a href="#">
+                <img src="analytics.png" alt=""/>
+                <span>Analytics </span>
+            </a>
+        </div><br>
+
+            <div class="box1"></div>
+            <a href="#">
+                <img src="inbox.png" alt=""/>
+                <span>Inbox </span>
+            </a>
+        </div><br>
+
+            <div class="box1"></div>
+            <a href="#">
+                <img src="setting.png" alt=""/>
+                <span>Setting</span>
+            </a>
+            </div><br>
+
+            <button class="button">
+                <img src="logout.png"/>
+                <span>Logout</span>
+            </button>
+        </nav>
+    </aside>
+
+    
+        <section>
+            <article>
+                <img src="01.png" alt="#"/>
+                <h1>Why we are doing Altcampus</h1>
+                <p>s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+    </main>
+
+
+     <footer>
+         <div class="footer">
+             <small> &copy; AltCampus</small>
+
+             <a href="#"><img src="facebook.png" alt="facebook"></a>
+             <a href="#"><img src="twitter.png" alt="twitter"></a>
+            
+         </div>
+     </footer>
+    
+
+  </body>
+  </html>
+
+
+
+
+
+
+
+       <!--
+      /*custom styles*/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+
+.header{
+    background-color: blue;
+    padding: 32px;
+}
+
+.flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand img{
+    width:120px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 42px;
+    font-size: 20px;
+}
+
+       -->
